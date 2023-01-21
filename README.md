@@ -1,9 +1,6 @@
 # NWHacks23
 
 Group Members:
-
-Saumya Jain
-
-Aryan Ballani
-
-Apram Ahuja
+- Saumya Jain
+- Aryan Ballani
+- Apram Ahuja
