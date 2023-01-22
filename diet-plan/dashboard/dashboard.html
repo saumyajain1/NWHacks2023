@@ -7,6 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <title>Dashboard</title>
+    <link href="dashboard.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 </head>
 
 
@@ -22,16 +26,13 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#about">About</a>
+                        <a class="nav-link" aria-current="page" href="#about">Recommended Plan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
+                        <a class="nav-link" aria-current="page" href="#events">Why EatRight</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html" target="_blank">Team</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Contact</a>
+                        <a class="nav-link" aria-current="page" href="#team">Developers</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +40,6 @@
     </nav>
 </header>
 
-    <link href="dashboard.css" rel="stylesheet">
     <div class="wrapper fadeInDown">
         <div id="formContent">
           <h2 class="active"> Info Tab</h2>
@@ -54,7 +54,7 @@
           <form>
             <input type="text" id="weight" class="fadeIn second" name="weight" placeholder="Enter Weight (in Kgs)">
             <input type="text" id="height" class="fadeIn third" name="height" placeholder="Enter Height (in cms)">
-            <input type="submit" class="fadeIn fourth" value="Sign in" href="password.html">
+            <input type="submit" class="fadeIn fourth" value="Calculate">
           </form>
       
           <!-- Remind Passowrd -->
@@ -65,10 +65,49 @@
         </div>
     </div>
 
-    <footer class="container">
-      <p class="float-end"><a href="#">Back to top</a></p>
-      <p>&copy; USS 2022 &middot; <a href="https://www.ubc.ca" target="_blank">UBC</a> &middot; <a href="https://www.stat.ubc.ca" target="_blank">Stats</a></p>
-  </footer>
+    <main>
+    
+    <div class="about" id="about">
+        <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolder;">Your recommended Diet plans</h1>
+        <br>
+        <div class="float-parent-element">
+            <div class="float-child-element">
+                <h5 class="left-box">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non eros non nunc pellentesque tincidunt nec sit amet leo. Vestibulum consequat commodo lectus, nec venenatis velit pretium id. Pellentesque sed tempor mi. Aenean vehicula quis ante quis tempor. Phasellus eget commodo ante, id volutpat justo. Pellentesque vel cursus lacus. Sed sollicitudin elit id condimentum lacinia.
+                </h5>
+            </div>
+            <div class="float-child-element">
+                <h5 class="right-box">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non eros non nunc pellentesque tincidunt nec sit amet leo. Vestibulum consequat commodo lectus, nec venenatis velit pretium id. Pellentesque sed tempor mi. Aenean vehicula quis ante quis tempor. Phasellus eget commodo ante, id volutpat justo. Pellentesque vel cursus lacus. Sed sollicitudin elit id condimentum lacinia.
+                </h5>
+            </div>
+          </div>
+    </div>
+
+    <div class="events" id="events">
+        <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolder;">Your recommended Diet plans</h1>
+        <br>
+        <div class="float-parent-element">
+            <div class="float-child-element">
+                <h5 class="left-box">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non eros non nunc pellentesque tincidunt nec sit amet leo. Vestibulum consequat commodo lectus, nec venenatis velit pretium id. Pellentesque sed tempor mi. Aenean vehicula quis ante quis tempor. Phasellus eget commodo ante, id volutpat justo. Pellentesque vel cursus lacus. Sed sollicitudin elit id condimentum lacinia.
+                </h5>
+            </div>
+            <div class="float-child-element">
+                <h5 class="right-box">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non eros non nunc pellentesque tincidunt nec sit amet leo. Vestibulum consequat commodo lectus, nec venenatis velit pretium id. Pellentesque sed tempor mi. Aenean vehicula quis ante quis tempor. Phasellus eget commodo ante, id volutpat justo. Pellentesque vel cursus lacus. Sed sollicitudin elit id condimentum lacinia.
+                </h5>
+            </div>
+          </div>
+        </div>
+
+    
+        <!-- FOOTER -->
+        <footer class="container">
+         <p class="float-end"><a href="#">Back to top</a></p>
+         <p>&copy; Saumya Jain's Property &middot; <a href="https://www.ubc.ca" target="_blank">UBC</a> &middot; <a href="index.html" target="_blank">EatRight</a></p>
+        </footer>
+    </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"

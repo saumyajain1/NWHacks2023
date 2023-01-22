@@ -21,6 +21,7 @@ function showPass() {
         .then(function(response) {
              return response.json();
             })
+
         .then(function(data){
             // Checks if the entered username and password match a valid set of credentials
             var valid = false;
