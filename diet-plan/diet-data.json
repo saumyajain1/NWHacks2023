@@ -1,5 +1,8 @@
 [
-    { "username": "admin", "password": "password" },
-    { "username": "testuser", "password": "testpass" },
-    { "username": "demo", "password": "demo" }
+    { "bulk 1": "admin", "password": "password" },
+    { "bulk 2": "testuser", "password": "testpass" },
+    { "cut 1": "demo", "password": "demo" }
+    { "cut 2": "demo", "password": "demo" }
+    { "maintain 1": "demo", "password": "demo" }
+    { "maintain 2": "demo", "password": "demo" }
 ]
