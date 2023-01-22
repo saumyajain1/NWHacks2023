@@ -145,7 +145,17 @@ h2.active {
 }
 
 
-/* Conatiner code ============================================== */
+/* ============================================== */
+
+.plan1 {
+  align-content: center;
+  background-color: #219957;
+}
+
+.plan2 {
+  align-content: center;
+  background-color: #219957;
+}
 /* =====================================*/
 
 .float-parent-element { 
