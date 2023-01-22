@@ -1,8 +1,3 @@
-// bunch of additional functions
-function wrongAlert() {
-    alert("No such combination found"+ "  Please try again! or Sign Up");
-}
-
 function showPass() {
     var x = document.getElementById("password");
     if (x.type === "password") {
