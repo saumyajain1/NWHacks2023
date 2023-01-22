@@ -36,7 +36,8 @@ function showPass() {
                 window.location.href = "dashboard/dashboard.html";
             } else {
                 // Display an error message
-                document.getElementById("error-message").innerHTML = "Incorrect username or password. Please try again.";
+                // document.getElementById("error-message").innerHTML = "Incorrect username or password. Please try again.";
+                alert("Wrong credentials. Please try again.");
             }
         })
         
