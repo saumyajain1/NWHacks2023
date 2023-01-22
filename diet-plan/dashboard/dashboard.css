@@ -82,6 +82,10 @@ h2 {
   -webkit-overflow-scrolling: touch;
 }
 
+.navbar-brand {
+  -webkit-text-fill-color: rgb(29, 131, 29);
+}
+
 /*==========================================*/
 
 /* STRUCTURE */
