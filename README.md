@@ -12,5 +12,7 @@ Body Mass Index for users are stored in our database.
 ## 3) Diet Recommendation
 Using the Health Information provided by the user we can provide a personalised diet recommendation which would be beneficial for them to achieve their health goals
 
-Languages used : Java , html , css, javascript.
+---
+
+*Languages used* : Java , html , css, javascript.
 

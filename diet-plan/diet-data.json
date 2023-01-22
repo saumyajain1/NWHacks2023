@@ -1,8 +1,8 @@
 [
-    { "bulk 1": "admin", "password": "password" },
-    { "bulk 2": "testuser", "password": "testpass" },
-    { "cut 1": "demo", "password": "demo" }
-    { "cut 2": "demo", "password": "demo" }
-    { "maintain 1": "demo", "password": "demo" }
-    { "maintain 2": "demo", "password": "demo" }
+    { "bulk1": "admin", "password": "password" },
+    { "bulk2": "testuser", "password": "testpass" },
+    { "cut1": "demo", "password": "demo" },
+    { "cut2": "min", "password": "jjs" },
+    { "maintain1": "ds", "password": "dh" },
+    { "maintain2": "kjsbdc", "password": "jgdc" }
 ]
