@@ -44,18 +44,3 @@ function showPass() {
             console.log("Error fetching JSON file: ", error);
         });
 }
-
-
-//   function checkInfo() {
-// 	var username = document.getElementById('username').value
-// 	var password = document.getElementById('password').value
-
-// 	for(var i = 0; i < objPeople.length; i++) {
-// 		// check is user input matches username and password of a current index of the objPeople array
-// 		if(username == objPeople[i].username && password == objPeople[i].password) {
-//             window.location.href = "password.html"
-// 		}
-// 	}
-//         wrongAlert()
-    
-// }
