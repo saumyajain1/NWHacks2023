@@ -51,6 +51,14 @@
           <form>
             <input type="text" id="weight" class="fadeIn second" name="weight" placeholder="Enter Weight (in Kgs)">
             <input type="text" id="height" class="fadeIn third" name="height" placeholder="Enter Height (in cms)">
+            <br>
+            <select type=".diet-drop" name="diet_drop" id="diet">
+                <option value="NONE">NONE</option>
+                <option value="Bulk">Bulk</option>
+                <option value="Maintain">Maintain</option>
+                <option value="Cut">Cut</option>
+            </select>
+            <br>
             <input type="submit" class="fadeIn fourth" value="Calculate" onclick="findBMI()">
             
           </form>
@@ -62,40 +70,85 @@
     <main>
     
     <div class="about" id="about">
-        <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolder;">Your recommended Diet plans</h1>
+        <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolder;">Your recommended Meals</h1>
         <br>
         <h3 class="BMI"> </h3>
         <div class="float-parent-element">
             <div class="float-child-element">
-                <h5 class="left-box" id="plan1" >
-                    Plan 1 Here
+                <h5 class="left-box" itemid="plan1">
+                    Name: Chicken and Rice <br>
+                    Protein: 23 <br>
+                    Calories: 242.0 <br>
+                    Ingredients: <br>
+                    Onion <br>
+                    Garlic <br>
+                    Tomato <br>
+                    Chicken <br>
+                    Bread <br>
+                    Corn 
                 </h5>
             </div>
             <div class="float-child-element">
                 <h5 class="right-box" id="plan2">
-                    Plan 2 Here
-                    <script>function giveBMI() {
-                        var weight = document.getElementById("weight").value;
-                        var height = document.getElementById("height").value;
-                        // BMI = weight (kg) / height (m)^2
-                        var bmi = weight / (height * height/10000);
-                        if (bmi <= 18.5){
-                            document.getElementById("plan1").innerHTML = "In recent years, more than half of Canadian women aged 18 or older were overweight or obese, compared with two-thirds of men: an estimated 7.1 million women and 8.6 million men in 2008.";
-                            document.getElementById("plan2").innerHTML = "In recent years, more than half of Canadian women aged 18 or older were overweight or obese, compared with two-thirds of men: an estimated 7.1 million women and 8.6 million men in 2008.";
-                        } else if (bmi < 25) {
-                            document.getElementById("plan1").innerHTML = "Fit";
-                            document.getElementById("plan2").innerHTML = "Pasta";
-                        } else {
-                            document.getElementById("plan1").innerHTML = "Cut";
-                            document.getElementById("plan2").innerHTML = "Cut 2";
-                        } 
-                    }
-                    giveBMI();
+                    Name: Peanut Butter Chicken Curry <br>
+                    Protein: 38.400000000000006 <br>
+                    Calories: 452.0 <br>
+                    Ingredients: <br>
+                    Onion <br>
+                    Garlic <br>
+                    Chicken <br>
+                    Milk <br>
+                    Rice <br>
+                    Tomato <br>
+                    Peanut Butter <br>
+                    Spices 
+
+                    <script>
+                        function giveBMI() {
+                            var weight = document.getElementById("weight").value;
+                            var height = document.getElementById("height").value;
+                            var data_type = document.getElementsById("diet").value;
+                            // BMI = weight (kg) / height (m)^2
+                            var bmi = weight / (height * height/10000);
+                            
+                            if (bmi <= 18.5 && diet_type == "Bulk") {
+                                document.getElementById("plan1").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                                document.getElementById("plan2").innerHTML = "NONE";
+                            } else if (bmi <= 18.5 && diet_type == "Cut") {
+                                document.getElementById("plan1").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                                document.getElementById("plan2").innerHTML = "Name: Chicken and Rice\nProtein: 23\nCalories: 242.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn";
+                            } else if (bmi <= 18.5 && diet_type == "Maintain") {
+                                document.getElementById("plan1").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                                document.getElementById("plan2").innerHTML = "NONE";
+                            } else if (bmi < 25 && diet_type == "Bulk") {
+                                document.getElementById("plan1").innerHTML = "Name: Chicken and Rice\nProtein: 23\nCalories: 242.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn";
+                                document.getElementById("plan2").innerHTML = "Name: Chicken Pasta Salad\nProtein: 25\nCalories: 322.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn\nPasta";
+                            } else if (bmi < 25 && diet_type == "Cut") {
+                                document.getElementById("plan1").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                                document.getElementById("plan2").innerHTML = "NONE";
+                            } else if (bmi < 25 && diet_type == "Miantain") {
+                                document.getElementById("plan1").innerHTML = "Name: Chicken and Rice\nProtein: 23\nCalories: 242.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn";
+                                document.getElementById("plan2").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                            } else if (bmi >= 25 && diet_type == "Bulk") {
+                                document.getElementById("plan1").innerHTML = "Name: Chicken Pasta Salad\nProtein: 25\nCalories: 322.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn\nPasta";
+                                document.getElementById("plan2").innerHTML = "NONE";
+                            } else if (bmi >= 25 && diet_type == "Cut") {
+                                document.getElementById("plan1").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                                document.getElementById("plan2").innerHTML = "Name: Chicken Pasta Salad\nProtein: 25\nCalories: 322.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn\nPasta";}
+                            else {
+                                document.getElementById("plan1").innerHTML = "Name: Chicken Pasta Salad\nProtein: 25\nCalories: 322.0\nIngredients:\nOnion\nGarlic\nTomato\nChicken\nBread\nCorn\nPasta";
+                                document.getElementById("plan2").innerHTML = "Name: Paneer Sandwich\nProtein: 16.299999999999997\nCalories: 365.0\nIngredients:\nOnion\nGarlic\nTomato\nRanch\nPaneer\nBread\nCorn\nParmesan Cheese";
+                            } 
+                        }
                     </script>
                 </h5>
             </div>
           </div>
+          <form>
+            <input type="submit" value="Show plan" onclick="giveBMI()">
+          </form>
     </div>
+   
 
     <div class="events" id="events">
         <h1 style="text-align: center; font-size: 2.5rem; font-weight: bolder;">Why us?</h1>
