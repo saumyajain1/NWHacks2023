@@ -34,9 +34,9 @@ function showPass() {
                 // Redirect the user to the dashboard page
                 window.location.href = "password.html";
             } else {
-                // wrongAlert();
+                wrongAlert();
                 // Display an error message
-                document.getElementById("error-message").innerHTML = "Incorrect username or password. Please try again.";
+                // document.getElementById("error-message").innerHTML = "Incorrect username or password. Please try again.";
             }
         })
         
